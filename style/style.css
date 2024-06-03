@@ -313,6 +313,9 @@ h1, h2, h3, h4, h5, h6, p {
   
   .footer-bg {
     background-color: var(--bg-color-dark-purple);
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   
   /* =====================tablet===================== */
@@ -496,6 +499,9 @@ h1, h2, h3, h4, h5, h6, p {
   
     .footer-bg {
       background-color: var(--bg-color-dark-purple);
+      display: flex;
+      padding-top: 20px;
+    padding-bottom: 20px;
     }
   }
   
@@ -685,6 +691,10 @@ h1, h2, h3, h4, h5, h6, p {
   
     .footer-bg {
       background-color: var(--bg-color-dark-purple);
+      display: flex;
+      align-items: center;
+      padding-top: 20px;
+    padding-bottom: 20px;
     }
   }
   
