@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6, p {
   
   /* Set background image for header */
 .header-bg {
-  background-image: url('/src/img/Header.webp');
+  background-image: url('/img/Header.webp');
   background-size: cover;
   background-position: center;
   text-align: center;
