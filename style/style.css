@@ -84,29 +84,21 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'Montserrat', sans-serif;
   }
   
-  /* Set background image for header */
-.header-bg {
-  background-image: url('/img/Header.png');
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  color: white;
-  position: relative;
-  height: 300px; 
-  top: 30px; 
-}
-
-.container-team {
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .header-bg {
+    background-color: var(--primary-text-color-theme-dark);
+    text-align: center;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-title {
   font-size: 48px;
   font-weight: 600;
+  color: var(--primary-text-color-theme-light);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .visually-hidden {
@@ -149,13 +141,9 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .team-wrapper {
     display: flex;
-    margin-top: 100px;
     flex-direction: column;
   }
   
-  .header-bg {
-    background-color: var(--primary-text-color-theme-dark);
-  }
   
   .logo-wrapper {
     width: 100%;
@@ -338,11 +326,6 @@ h1, h2, h3, h4, h5, h6, p {
       padding-left: 32px;
     }
   
-    .header-bg {
-      background-color: var(--primary-text-color-theme-dark);
-      background-position: center 30%; /* Adjust the position for tablets */
-      height: 400px;
-    }
   
     .logo-wrapper {
       width: 100%;
@@ -525,9 +508,6 @@ h1, h2, h3, h4, h5, h6, p {
       padding-left: 32px;
     }
   
-    .header-bg {
-      background-color: var(--primary-text-color-theme-dark);
-    }
   
     .logo-wrapper {
       width: 100%;
@@ -739,10 +719,14 @@ h1, h2, h3, h4, h5, h6, p {
   }
   
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .header-bg {
-      background-position: center 30%; 
-      height: 400px; 
-    }
+    .container-team {
+      max-width: 768px;
+      padding: 0 32px;
+  }
+ 
+  .header-title {
+      font-size: 64px;
+  }
     .scroll-up {
       position: fixed;
       right: 20px;
@@ -771,6 +755,14 @@ h1, h2, h3, h4, h5, h6, p {
   }
   
   @media screen and (min-width: 1200px) {
+    .container-team {
+      max-width: 1200px;
+      padding: 0 32px;
+  }
+  
+  .header-title {
+      font-size: 80px;
+  }
     .scroll-up {
       display: none;
     }
@@ -778,10 +770,7 @@ h1, h2, h3, h4, h5, h6, p {
     .scroll-up-icon {
       display: none;
     }
-    .header-bg {
-      background-position: center 20%; 
-      height: 500px; 
-    }
+    
   }
 
   
